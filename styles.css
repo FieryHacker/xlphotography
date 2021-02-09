@@ -4388,6 +4388,10 @@ input[type=button].btn-block {
   color: #fff;
 }
 
+.navbar-rest {
+  background-color: rgb(253, 106, 2);
+}
+
 .card {
   position: relative;
   display: flex;
@@ -10117,6 +10121,7 @@ body {
   letter-spacing: 0.0625em;
 }
 
+/* Navigation Bar */
 #mainNav {
   min-height: 3.5rem;
   background-color: #fff;
@@ -10201,6 +10206,14 @@ body {
   border: 0;
 }
 
+/* A buffer for the entire site */
+.site-buffer {
+  margin: 0;
+  padding-top: calc(50px + 10vw);
+  background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.05) 100%);
+}
+
+/* Home Screen */
 .masthead {
   position: relative;
   width: 100%;
@@ -10215,10 +10228,10 @@ body {
 }
 .masthead h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 2.5rem;
+  font-size: calc(15px + 2.5vw);
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(210, 180, 140, 0));
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(36, 56, 209, 0.5));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
@@ -10249,16 +10262,9 @@ body {
   }
 }
 
-.about-section {
-  padding-top: 10rem;
-  background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
-}
-.about-section p {
-  margin-bottom: 5rem;
-}
-
 .projects-section {
   padding: 10rem 0;
+  padding-top: 5rem;
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -10303,6 +10309,36 @@ body {
   border: 0;
 }
 
+/* About page */
+#about .container1 {
+  margin: 2rem;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+#about h1 {
+  padding: 1rem;
+  padding-top: 2.5vw;
+  padding-bottom: 0.5vw;
+  margin: 2rem;
+  margin-bottom: 0rem;
+  font-size: calc(4px + 3vw);
+  white-space: nowrap;
+}
+#about .h1-block {
+  background-color: rgba(138, 42, 12, 0.8);
+  padding: 0.5vw;
+  margin-bottom: 2vw;
+  border: 1vw, rgba(138, 42, 12, 0.8);
+}
+#about h2 {
+  font-size: calc(10px + 2.5vw);
+}
+#about p {
+  font-size: 1.25rem;
+  padding: 2rem;
+}
+
+/* Contact Page */
 .contact-section {
   padding-top: 5rem;
 }
@@ -10340,6 +10376,7 @@ body {
   color: #fff;
 }
 
+/* Universal Footer */
 .footer {
   padding: 5rem 0;
 }
