@@ -19,7 +19,7 @@
 		<!-- Navigation -->
 		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
 	        <div class="container">
-	            <a class="navbar-brand js-scroll-trigger" href="index.html">The Minimalistic</a>
+	            <a class="navbar-brand js-scroll-trigger" href="index.html">Xavier Len</a>
 	            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 	                Menu
 	                <i class="fas fa-bars"></i>
@@ -35,46 +35,85 @@
 	        </div>
 	    </nav>
         <!-- Buffer -->
-        <section class="site-buffer text-center" id="about">
+        <section class="site-buffer">
             <div class="container">
                 <div class="row"><br><br></div>
             </div>
         </section>
-        <!-- Contact-->
-        <section class="contact-section bg-black">
+        <!-- Contact -->
+        <section class="text-center" id="contact">
             <div class="container">
+                <h1>Contacts</h1>
+                <div class="h1-block"></div>
+            </div>
+            <!-- Booking Container -->
+            <h2>Need an Appointment?</h2>
+        </section>
+        <div class="container" id="appform">
+            <form action="./php/appointment.php">
                 <div class="row">
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Address</h4>
-                                <hr class="my-4" />
-                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
-                            </div>
-                        </div>
+                    <div class="col-25">
+                        <label for="name">Name</label>
                     </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-envelope text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Email</h4>
-                                <hr class="my-4" />
-                                <div class="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Phone</h4>
-                                <hr class="my-4" />
-                                <div class="small text-black-50">+1 (555) 902-8832</div>
-                            </div>
-                        </div>
+                    <div class="col-75">
+                        <input type="text" id="name" name="fullname" placeholder="Your name">
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" name="email" placeholder="Your email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="phonenum">Phone Number</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="phonenum" name="phone" placeholder="Your phone #">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="notes">Other Comments</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="notes" name="comments" placeholder="Comments">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="date">Date of Appointment</label>
+                    </div>
+                    <div class="col-date">
+                        <input type="date" id="date" name="date" placeholder="mm-dd-yy">
+                    </div>
+                </div>
+                <div class="row text-center">
+                  <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+            <!-- Social Media Container -->
+        <section class="text-center" id="contact">
+            <h2>Social Media Links</h2>
+            <div class="social-container">
+                <ul>
+                    <li>
+                        <a href="#" class="social-media facebook" id="fb"><b>Facebook</b> | @Xavier Len</a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-media twitter" id="tw"><b>Twitter</b> | @XavierLen17</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/the_minimalistc.na/" class="social-media instagram" id="in"><b>Instagram</b> | @the_minimalistc.na</a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-media email" id="em"><b>Email</b> | xavier.len11@gmail.com</a>
+                    </li>
+                </ul>
             </div>
         </section>
 	    <!-- Footer-->
