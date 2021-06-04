@@ -18,8 +18,8 @@
 							</div>";
 		}
 
-		if(isset($_POST['email'])) {
-			$email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['email']);
+		if(isset($_POST['rep-email'])) {
+			$email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['rep-email']);
 			$email = filter_var($email, FILTER_VALIDATE_EMAIL);
 			$email_body .= "<div>
 							   <label><b>Visitor Email:</b></label>&nbsp;<span>".$email."</span>
@@ -33,8 +33,8 @@
 							</div>";
 		}
 
-		if(isset($_POST['events'])) {
-			$event = filter_var($_POST['events'], FILTER_SANITIZE_STRING);
+		if(isset($_POST['event'])) {
+			$event = filter_var($_POST['event'], FILTER_SANITIZE_STRING);
 			$email_body .= "<div>
 							   <label><b>Requested Event:</b></label>&nbsp;<span>".$event."</span>
 							</div>";
@@ -47,8 +47,8 @@
 							</div>";
 		}
 
-		if(isset($_POST['date'])) {
-			$date = filter_var($_POST['date'], FILTER_SANITIZE_STRING);
+		if(isset($_POST['fulldate'])) {
+			$date = filter_var($_POST['fulldate'], FILTER_SANITIZE_STRING);
 			$email_body .= "<div>
 							   <label><b>Reason For Contacting Us:</b></label>&nbsp;<span>".$date."</span>
 							</div>";
@@ -70,4 +70,4 @@
 		echo '<p>Something went wrong...</p>';
 	}
 
->
+?>
