@@ -10316,6 +10316,20 @@ body {
   font-size: calc(4px + 3vw);
   white-space: nowrap;
 }
+#services .container {
+	margin-bottom: 20px;
+}
+#services .grow-hover {
+	transition: all .2s ease-in-out;
+}
+#services .grow-hover:hover {
+	transform: scale(1.1);
+}
+#services a {
+	text-decoration: none;
+	color: black;
+}
+
 @media (max-width: 1035px) {
   #projects h1 {
     font-size: 35px;
