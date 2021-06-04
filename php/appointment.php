@@ -8,6 +8,8 @@
 		$comments = "";
 		$date = "";
 		$email_body = "<div>";
+		$recipient = "xavier.len11@gmail.com";
+		$email_title = "New Appointment Request!";
 
 		if(isset($_POST['fullname'])) {
 			$name = filter_var($_POST['fullname'], FILTER_SANITIZE_STRING);
@@ -51,6 +53,21 @@
 							   <label><b>Reason For Contacting Us:</b></label>&nbsp;<span>".$date."</span>
 							</div>";
 		}
+
+		$email_body .= "</div>";
+ 
+	    $headers  = 'MIME-Version: 1.0' . "\r\n"
+	    .'Content-type: text/html; charset=utf-8' . "\r\n"
+	    .'From: ' . $email . "\r\n";
+
+	    if(mail($recipient, $email_title, $email_body, $headers)) {
+	        echo "<p>Thank you for contacting us, $name. You will get a reply within 24 hours.</p>";
+	    } else {
+	        echo '<p>We are sorry but the email did not go through.</p>';
+	    }
+
+	} else {
+		echo '<p>Something went wrong...</p>';
 	}
 
 >
