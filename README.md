@@ -1,5 +1,5 @@
-# XL Photography - March 2021 SLC, June 2021 NLC
+# XL Photography - NLC 2021
 
-FBLA Website Design, Nguyen, Lee, Evangelista
+FBLA Website Design, Nguyen, Evangelista
 
 Egg Harbor Township High School
