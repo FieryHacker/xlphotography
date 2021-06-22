@@ -10599,6 +10599,7 @@ body {
   width: 500%;
   height: 100%;
   display: flex;
+
 }
 .slide {
   width: 20%;
@@ -10640,19 +10641,23 @@ body {
 .bar:hover {
   background: #fff;
 }
+
 input[name="r"] {
   position: absolute;
   visibility: hidden;
 }
 @media (max-width: 885px) {
   .bar {
-    width: 20px;
+    width: 5vw;
     height: 10px;
     margin: 0px;
   }
   .piccontainer {
     margin-left: 0rem;
     margin-right: 0rem;
+    width: 100%;
+  }
+  .slideshow {
     width: 100%;
   }
 }
@@ -10746,6 +10751,15 @@ input[name="r"] {
 #contact .social-container {
   margin: 3rem;
 }
+.form-verify {
+  border: 1.5px solid #179638;
+  background-color: rgba(12, 232, 70, 0.8);
+  margin:  7vw;
+  visibility: hidden;
+  margin-top:  0;
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 1035px) {
   #contact .h1-block  {
     padding: 3.5px;
@@ -10768,7 +10782,7 @@ input[name="r"] {
   padding: 12px 12px 12px 0;
   display: inline-block;
 }
-#appform input[type=submit] {
+#appform input[type=button] {
   background-color: black;
   width:  100%;
   color: white;
@@ -10836,7 +10850,7 @@ input[name="r"] {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
-  .col-25, .col-75, input[type=submit] {
+  .col-25, .col-75, input[type=button] {
     width: 100%;
     margin-top: 0;
   }
