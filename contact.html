@@ -49,9 +49,13 @@
             </div>
             <!-- Booking Container -->
             <h2>Need an Appointment?</h2>
+
+            <div class="form-verify" id="form-verify-id">
+                Your request has been sent to Xavier!
+            </div>
         </section>
         <div class="container" id="appform">
-            <form action="">
+            <form>
                 <div class="row">
                     <div class="col-25">
                         <label for="name">Name</label>
@@ -87,6 +91,7 @@
                           <option value="modelling">Modeling</option>
                           <option value="real-estate">Real Estate</option>
                           <option value="groups">Groups</option>
+                          <option value="customs">Customs</option>
                         </select>
                     </div>
                 </div>
@@ -107,7 +112,8 @@
                     </div>
                 </div>
                 <div class="row text-center">
-                  <input type="submit" value="Submit">
+                  <input type="button" value="Submit" onclick="document.getElementById('form-verify-id').style.visibility = 'visible'">
+                    
                 </div>
             </form>
         </div>
